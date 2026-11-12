@@ -4,7 +4,7 @@ class Solution:
     def binarysea(self,nums,l,r,target):
         if l>r:
             return -1
-        mid=(l+r)//2
+        mid=l+(r-l)//2
         if nums[mid]==target:
             return mid
         if nums[mid]<target:
